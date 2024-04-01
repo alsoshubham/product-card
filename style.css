@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --darkGreen: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --gray: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --head: 2rem;
+  --text: 1rem;
+}
+
+/*styling for entire container including card-box and card-text*/
+.container {
+  min-height: 100vh;
+  background-color: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  display: block;
+  unicode-bidi: isolate;
+}
+
+/* */
+.card-box {
+  margin: 1em 2em;
+  max-width: 700px;
+  background-color: white;
+  border-radius: 1.5em;
+  display: flex;
+}
+
+div{
+  display: block;
+  unicode-bidi: isolate;
+}
+/*style code for image*/
+img {
+  max-width: 100%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.desktop-image{
+  display: block;
+  height: 100%;
+  width: 900px;
+  border-radius: 1.5em 0 0 1.5em;;
+}
+
+/*Styling for card texts*/
+.card-text {
+  text-align: left;
+  margin: 1.5em 2em;
+  display: block;
+  unicode-bidi: isolate;
+}
+
+/*this is for Title "Coffee Mug"*/
+.product {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--text);
+  color: var(--gray);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+/*this is for the title "white coffee mug"*/
+.product-title {
+  font-size: var(--head);
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  line-height: 1;
+  margin: 0.6em 0 0.7em 0;
+  width: 80%;
+}
+
+h2{
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+.description {
+  font-family: "Montserrat", sans-serif;
+  width: 96%;
+  font-size: var(--text);
+  color: var(--gray);
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}
+
+/*this is for the discounted price highlighted in green*/
+.discounted-price {
+  margin-right: 0.3em;
+  color: var(--darkGreen);
+  font-size: var(--head);
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  line-height: 1;
+  margin: 0.6em 0 0.7em 0;
+  width: 80%;
+
+  /*green text*/
+  margin-right: 0.3em;
+  color: var(--darkGreen);
+}
+
+/* this is for the cancelled price*/
+.actual-price {
+  text-decoration: line-through;
+  align-self: center;
+}
+
+.actual-price{
+  font-family: "Montserrat", sans-serif;
+  width: 96%;
+  font-size: var(--text);
+  color: var(--gray);
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}
+
+/* below here is the CSS code for Add to Cart button*/
+.button {
+  display: block;
+  margin: 2em 0 1em 0;
+  background-color: var(--darkGreen);
+  width: 100%;
+  padding: 1em 0;
+  color: var(--white);
+  border: 0;
+  border-radius: 0.7em;
+  outline: none;
+  cursor: pointer;
+}
+/* this actually works while we hover over the Add to cart button*/
+.button:hover {
+  background-color: hsl(156, 24%, 24%);
+}
+/* this is the icon of Cart in button*/
+.button-image {
+  margin-right: 1em;
+  max-width: 100%;
+}
+/* this is for the description "Add to cart"*/
+.button-description {
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  width: 96%;
+  font-size: var(--text);
+  color: var(--white);
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}
+/*
+  :root {
+    --head: 5rem;
+    --text: 2rem;
+  }
+
+  .card_text {
+    text-align: left;
+    margin: 4em 2.5em;
+  }
+
+  .card-box {
+    margin: 1em;
+    max-width: 1200px;
+  }
+
+  .desktop_img {
+    width: 1600px;
+    height: 100%;
+  }
+
+  .btn {
+    padding: 2em 0;
+  }
